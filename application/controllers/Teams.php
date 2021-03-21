@@ -43,7 +43,7 @@ class Teams extends REST_Controller
                                     pc.country_name as name_country, ppt.position_type_name as name_position, url_img_member_teams, teams_parrafo_card,
                                     facebook_have, url_facebook_social_net, twitter_have, url_twitter_social_net, whatsapp_have, 
                                     url_whatsapp_social_net, address_uri_qr_whatsapp, linkedin_have, url_linkedin_social_net
-                                    FROM pdgroupdb_site.pdg_teams pt
+                                    FROM pdg_teams pt
                                     inner join pdg_position_type ppt on ppt.position_type_id = pt.teams_position_id 
                                     inner join pdg_countries pc on pt.country_id 
                                     where ppt.position_type_id = pt.teams_position_id and 
