@@ -40,7 +40,7 @@ class Subscriptions extends REST_Controller
         if (!isset($data["email_subscription"])) {
             $respuesta = array(
                 'error' => TRUE,
-                'mensaje' => "Faltan datos en el servicio de creacion de subscripcion"
+                'mensaje' => "Faltan datos en el servicio de creacion de subscripcion!!!"
             );
             $this->response($respuesta, REST_Controller::HTTP_BAD_REQUEST);
             return;
@@ -57,7 +57,7 @@ class Subscriptions extends REST_Controller
         if ($existe) {
             $respuesta = array(
                 'error' => "true",
-                'mensaje' => "Cuenta correo ya esta registrada en nuestros sistemas"
+                'mensaje' => "Cuenta correo ya esta registrada en nuestros sistemas!!!"
             );
 
             $this->response($respuesta);
@@ -78,7 +78,7 @@ class Subscriptions extends REST_Controller
 
             $respuesta = array(
                 'error' => "false",
-                'mensaje' => "Solicitud de Subscripcion guardada correctamente"
+                'mensaje' => "Solicitud de Subscripcion guardada correctamente!!!"
                // 'id' => $record_insert
             );
 

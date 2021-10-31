@@ -47,7 +47,7 @@ class Contactus extends REST_Controller
         if ($existe) {
             $respuesta = array(
                 'error' => "true",
-                'mensaje' => "Ya correo esta registrado"
+                'mensaje' => "Ya esta cuenta de correo esta registrada!!!"
             );
             $this->response($respuesta);
             return;
